@@ -84,6 +84,7 @@ function updateClock() {
       notlit[i].style.display = "none";
     }
   }
+  
   msg.firstChild.nodeValue = items[day][index];
   var dayoo = (houT - hou) % 24,
       hour = houT - hou,
