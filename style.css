@@ -1,0 +1,28 @@
+body {
+  background-color:#666;
+  font: small-caps bold 43px/150% Arial, Helvetica, sans-serif;
+}
+#tag {
+  color: #888;
+  font-size: 8px;
+  width: 95%;
+  text-align: right;
+}
+#timedate {
+  text-align:center;
+  width: 80%;
+  margin: auto;
+  margin-top: 0%;
+  color:#333;
+  padding: 20px;
+}
+.im{
+  width: 10%;
+  height: auto;
+}
+.right{
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
