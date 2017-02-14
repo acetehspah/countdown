@@ -94,9 +94,8 @@ function updateClock() {
   
   var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   var tagT = ["dT", "hT", "mT", "sT", "miT"],
-      corrT = [Math.floor((houT - hou) / 24),((houT - hou) % 24 + Math.sign(minT-min)).pad(2), ((minT - min + 60)%60).pad(2), (secT - sec).pad(2), (milliT - milli).pad(3)];
+      corrT = [Math.floor((houT - hou) / 24),((houT - hou) % 24 + Math.floor(Math.sign(minT-min)/2)).pad(2), ((minT - min + 59)%60).pad(2), (secT - sec).pad(2), (milliT - milli).pad(3)];
 
-//console.log((houT - hou) / 24);
 if((houT - hou) / 24 < 1 )
 {
   document.getElementById("dT").style.display = "none";
