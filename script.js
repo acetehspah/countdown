@@ -1,5 +1,5 @@
 // START CLOCK SCRIPT;
-*/var items = [
+/*var items = [
   ["School Starts"],
   ["School Starts", "First Period Starts", "First Period Ends", "Second Period Starts", "Second Period Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
   ["School Starts", "First Period Starts", "First Period Ends", "Second Period Starts", "Second Period Ends", "Tutorial Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
@@ -17,7 +17,7 @@ var items = [
   ["School Starts"],
   ["School Starts"]
 ];
-*/var timeSchedule = [
+/*var timeSchedule = [
   [3130],
   [730, 735, 825, 830, 920, 925, 1020, 1035, 1040, 1130, 1135, 1225, 1305, 1310, 1400, 1405, 1455, 3130],
   [730, 735, 820, 825, 910, 945, 950, 1040, 1055, 1100, 1145, 1150, 1235, 1315, 1320, 1405, 1410, 1455, 3130],
