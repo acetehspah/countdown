@@ -27,7 +27,6 @@ var notlit = document.getElementsByClassName("notlit");
 var lit = document.getElementsByClassName("lit");
 var secOffset = 42;
 
-
 Number.prototype.pad = function(n) {
   for (var r = this.toString(); r.length < n; r = 0 + r);
   return r;
