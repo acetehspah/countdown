@@ -4,9 +4,9 @@ var items = [
   ["School Starts", "First Period Starts", "First Period Ends", "Second Period Starts", "Second Period Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
   ["School Starts", "First Period Starts", "First Period Ends", "Second Period Starts", "Second Period Ends", "Tutorial Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
   ["School Starts", "Second Period Starts", "Second Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "School Starts"],
-  ["School Starts", "First Period Starts", "First Period Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"]
-    ["School Starts", "First Period Starts", "First Period Ends", "Second Period Starts", "Second Period Ends", "Tutorial Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
-    ["School Starts"]
+  ["School Starts", "First Period Starts", "First Period Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
+  ["School Starts", "First Period Starts", "First Period Ends", "Second Period Starts", "Second Period Ends", "Tutorial Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
+  ["School Starts"]
 ];
 var timeSchedule = [
   [3130],
@@ -25,6 +25,7 @@ var index = -1,
     dayT = -1;
 var notlit = document.getElementsByClassName("notlit");
 var lit = document.getElementsByClassName("lit");
+var secOffset = 42;
 
 
 Number.prototype.pad = function(n) {
@@ -43,6 +44,16 @@ function updateClock() {
     dy = now.getDate(),
     yr = now.getFullYear(),
     day = now.getDay();
+
+  sec = sec + secOffset;
+  min += Math.floor(sec/60);
+  hou += Math.floor(min/60);
+  day += Math.floor(hou/24);
+  sec %= 60;
+  min %= 60;
+  hou %= 24;
+  day %= 6;
+
   if(day != dayT)
     {
       for(var i = 0; i < timeSchedule[day].length; i++)
@@ -84,7 +95,7 @@ function updateClock() {
       notlit[i].style.display = "none";
     }
   }
-  
+
   msg.firstChild.nodeValue = items[day][index];
   var dayoo = (houT - hou) % 24,
       hour = houT - hou,
