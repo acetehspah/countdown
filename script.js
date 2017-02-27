@@ -1,5 +1,5 @@
 // START CLOCK SCRIPT;
-/*var items = [
+var items = [
   ["School Starts"],
   ["School Starts", "First Period Starts", "First Period Ends", "Second Period Starts", "Second Period Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
   ["School Starts", "First Period Starts", "First Period Ends", "Second Period Starts", "Second Period Ends", "Tutorial Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
@@ -7,32 +7,14 @@
   ["School Starts", "First Period Starts", "First Period Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
   ["School Starts", "First Period Starts", "First Period Ends", "Second Period Starts", "Second Period Ends", "Tutorial Ends", "Third Period Starts", "Third Period Ends", "Brunch Ends", "Fourth Period Starts", "Fourth Period Ends", "Fifth Period Starts", "Fifth Period Ends", "Lunch Ends", "Sixth Period Starts", "Sixth Period Ends", "Seventh Period Starts", "Seventh Period Ends", "School Starts"],
   ["School Starts"]
-];*/
-var items = [
-  ["School Starts"],
-  ["School Starts"],
-  ["School Starts"],
-  ["School Starts"],
-  ["School Starts"],
-  ["School Starts"],
-  ["School Starts"]
 ];
-/*var timeSchedule = [
+var timeSchedule = [
   [3130],
   [730, 735, 825, 830, 920, 925, 1020, 1035, 1040, 1130, 1135, 1225, 1305, 1310, 1400, 1405, 1455, 3130],
   [730, 735, 820, 825, 910, 945, 950, 1040, 1055, 1100, 1145, 1150, 1235, 1315, 1320, 1405, 1410, 1455, 3130],
   [910, 915, 1050, 1105, 1110, 1245, 1325, 1330, 1405, 3130],
   [730, 735, 910, 915, 1050, 1105, 1110, 1245, 1325, 1330, 1405, 3130],
   [730, 735, 820, 825, 910, 945, 950, 1040, 1055, 1100, 1145, 1150, 1235, 1315, 1320, 1405, 1410, 1455, 7930],
-  [5530]
-  ];*/
-var timeSchedule = [
-  [19930],
-  [17530],
-  [15130],
-  [12730],
-  [10330],
-  [7930],
   [5530]
   ];
 var index = -1,
