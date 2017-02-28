@@ -25,7 +25,7 @@ var index = -1,
     dayT = -1;
 var notlit = document.getElementsByClassName("notlit");
 var lit = document.getElementsByClassName("lit");
-var secOffset = 48;
+var secOffset = 0;
 
 Number.prototype.pad = function(n) {
   for (var r = this.toString(); r.length < n; r = 0 + r);
